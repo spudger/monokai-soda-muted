@@ -1,0 +1,41 @@
+# Monokai Soda Muted
+# Based on Monokai Soda with a lifted background and
+# toned-down accent saturation for long sessions.
+
+background = #232323
+foreground = #c4c5b5
+cursor-color = #f0f0e6
+selection-background = #3a3a3a
+selection-foreground = #c4c5b5
+
+# Black
+palette = 0=#232323
+palette = 8=#6b6656
+
+# Red (was #f4005f — pulled back from pure neon)
+palette = 1=#e24068
+palette = 9=#e8587a
+
+# Green (was #98e024 — still vivid, less nuclear)
+palette = 2=#8abf3a
+palette = 10=#a0cf55
+
+# Yellow / Orange (was #fa8419)
+palette = 3=#e0943e
+palette = 11=#d4c070
+
+# Blue / Purple (was #9d65ff)
+palette = 4=#9678d4
+palette = 12=#ab8fe0
+
+# Magenta (was same as red — now distinct)
+palette = 5=#cc5f8a
+palette = 13=#d87ba0
+
+# Cyan (was #58d1eb)
+palette = 6=#5cb8cc
+palette = 14=#74c8da
+
+# White
+palette = 7=#c4c5b5
+palette = 15=#f0f0e6

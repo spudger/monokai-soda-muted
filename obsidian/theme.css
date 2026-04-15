@@ -1,0 +1,335 @@
+/* Monokai Soda Muted — Obsidian Theme
+ * Matches the custom Ghostty terminal theme.
+ * Neutral grey base, desaturated Monokai-inspired accents.
+ */
+
+.theme-dark {
+  /* ===== Base colors ===== */
+  --background-primary:          #232323;
+  --background-primary-alt:      #2a2a2a;
+  --background-secondary:        #1e1e1e;
+  --background-secondary-alt:    #1a1a1a;
+  --background-modifier-border:  #3a3a3a;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-highlighted: #333333;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #8abf3a20;
+  --background-modifier-error:   #e2406820;
+  --background-modifier-error-rgb: 226, 64, 104;
+  --background-modifier-error-hover: #e24068;
+  --background-modifier-cover:   rgba(0, 0, 0, 0.6);
+
+  /* ===== Text colors ===== */
+  --text-normal:                 #c4c5b5;
+  --text-muted:                  #8a8b7e;
+  --text-faint:                  #6b6656;
+  --text-on-accent:              #f0f0e6;
+  --text-on-accent-inverted:     #232323;
+  --text-error:                  #e24068;
+  --text-error-hover:            #e8587a;
+  --text-success:                #8abf3a;
+  --text-selection:              rgba(90, 120, 212, 0.25);
+  --text-highlight-bg:           rgba(224, 148, 62, 0.25);
+  --text-highlight-bg-active:    rgba(224, 148, 62, 0.35);
+  --text-accent:                 #9678d4;
+  --text-accent-hover:           #ab8fe0;
+
+  /* ===== Interactive accent ===== */
+  --interactive-normal:          #2e2e2e;
+  --interactive-hover:           #383838;
+  --interactive-accent:          #9678d4;
+  --interactive-accent-hsl:      260, 48%, 64%;
+  --interactive-accent-hover:    #ab8fe0;
+  --interactive-before:          #6b6656;
+
+  /* ===== Scrollbar ===== */
+  --scrollbar-bg:                transparent;
+  --scrollbar-thumb-bg:          rgba(107, 102, 86, 0.3);
+  --scrollbar-active-thumb-bg:   rgba(107, 102, 86, 0.5);
+
+  /* ===== Nav / sidebar ===== */
+  --nav-item-color:              #8a8b7e;
+  --nav-item-color-hover:        #c4c5b5;
+  --nav-item-color-active:       #c4c5b5;
+  --nav-item-background-hover:   #2e2e2e;
+  --nav-item-background-active:  #333333;
+  --nav-collapse-icon-color:     #6b6656;
+
+  /* ===== Tab styling ===== */
+  --tab-text-color:              #8a8b7e;
+  --tab-text-color-focused:      #c4c5b5;
+  --tab-text-color-focused-active: #c4c5b5;
+  --tab-background-active:       #232323;
+  --tab-outline-color:           transparent;
+
+  /* ===== Titlebar ===== */
+  --titlebar-background:         #1a1a1a;
+  --titlebar-background-focused: #1e1e1e;
+  --titlebar-text-color:         #8a8b7e;
+
+  /* ===== Tag styling ===== */
+  --tag-color:                   #5cb8cc;
+  --tag-color-hover:             #74c8da;
+  --tag-background:              rgba(92, 184, 204, 0.12);
+  --tag-background-hover:        rgba(92, 184, 204, 0.2);
+
+  /* ===== Checkbox ===== */
+  --checkbox-color:              #9678d4;
+  --checkbox-color-hover:        #ab8fe0;
+  --checkbox-border-color:       #6b6656;
+
+  /* ===== Toggles ===== */
+  --toggle-thumb-color:          #f0f0e6;
+
+  /* ===== Blockquote ===== */
+  --blockquote-border-color:     #6b6656;
+
+  /* ===== Code ===== */
+  --code-normal:                 #c4c5b5;
+  --code-background:             #1e1e1e;
+  --code-white-space:            pre-wrap;
+
+  /* ===== Inline title ===== */
+  --inline-title-color:          #f0f0e6;
+
+  /* ===== Bold / italic ===== */
+  --bold-color:                  #e0943e;
+  --italic-color:                #cc5f8a;
+
+  /* ===== Link colors ===== */
+  --link-color:                  #5cb8cc;
+  --link-color-hover:            #74c8da;
+  --link-external-color:         #9678d4;
+  --link-external-color-hover:   #ab8fe0;
+  --link-unresolved-color:       #e24068;
+  --link-unresolved-opacity:     0.8;
+
+  /* ===== Graph view ===== */
+  --graph-line:                  #3a3a3a;
+  --graph-node:                  #9678d4;
+  --graph-node-focused:          #ab8fe0;
+  --graph-node-tag:              #5cb8cc;
+  --graph-node-attachment:       #8abf3a;
+  --graph-node-unresolved:       #e24068;
+
+  /* ===== Indentation guide ===== */
+  --indentation-guide-color:     rgba(107, 102, 86, 0.2);
+  --indentation-guide-color-active: rgba(107, 102, 86, 0.5);
+
+  /* ===== Prompt ===== */
+  --prompt-border-color:         #3a3a3a;
+
+  /* ===== Divider ===== */
+  --hr-color:                    #3a3a3a;
+
+  /* ===== Callouts (map to accent hues) ===== */
+  --callout-default:             92, 184, 204;
+  --callout-info:                150, 120, 212;
+  --callout-todo:                92, 184, 204;
+  --callout-tip:                 138, 191, 58;
+  --callout-success:             138, 191, 58;
+  --callout-warning:             224, 148, 62;
+  --callout-error:               226, 64, 104;
+  --callout-bug:                 226, 64, 104;
+  --callout-example:             204, 95, 138;
+  --callout-quote:               107, 102, 86;
+}
+
+/* ===== Headings ===== */
+.theme-dark {
+  --h1-color: #f0f0e6;
+  --h2-color: #d4c070;
+  --h3-color: #e0943e;
+  --h4-color: #5cb8cc;
+  --h5-color: #9678d4;
+  --h6-color: #8a8b7e;
+}
+
+/* ===== Editor / CodeMirror syntax highlighting ===== */
+.theme-dark .cm-s-obsidian {
+  color: #c4c5b5;
+}
+
+/* Headings in editor */
+.theme-dark .cm-header-1 { color: #f0f0e6 !important; }
+.theme-dark .cm-header-2 { color: #d4c070 !important; }
+.theme-dark .cm-header-3 { color: #e0943e !important; }
+.theme-dark .cm-header-4 { color: #5cb8cc !important; }
+.theme-dark .cm-header-5 { color: #9678d4 !important; }
+.theme-dark .cm-header-6 { color: #8a8b7e !important; }
+
+/* Inline code */
+.theme-dark :not(pre) > code {
+  color: #e0943e;
+  background-color: #1e1e1e;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Code blocks — match terminal feel */
+.theme-dark pre,
+.theme-dark pre code,
+.theme-dark .HyperMD-codeblock {
+  background-color: #1a1a1a !important;
+  color: #c4c5b5 !important;
+}
+
+/* Live Preview (CM6) — base code block text color (no !important so syntax wins) */
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock {
+  color: #c4c5b5;
+}
+
+.theme-dark .cm-s-obsidian .HyperMD-codeblock {
+  color: #c4c5b5 !important;
+}
+
+.theme-dark .cm-s-obsidian div.HyperMD-codeblock-begin,
+.theme-dark .cm-s-obsidian div.HyperMD-codeblock-end {
+  color: #6b6656 !important;
+}
+
+/* Syntax highlighting inside code blocks — Monokai Soda Muted palette */
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-keyword     { color: #e24068 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-def          { color: #5cb8cc !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-variable     { color: #c4c5b5 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-variable-2   { color: #74c8da !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-variable-3   { color: #5cb8cc !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-property     { color: #5cb8cc !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-string       { color: #a0cf55 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-string-2     { color: #8abf3a !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-number       { color: #9678d4 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-operator     { color: #e24068 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-punctuation  { color: #c4c5b5 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-bracket      { color: #c4c5b5 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-tag          { color: #e24068 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-attribute    { color: #8abf3a !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-type         { color: #5cb8cc !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-builtin      { color: #e0943e !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-atom         { color: #9678d4 !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-comment      { color: #6b6656 !important; font-style: italic; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-meta         { color: #e0943e !important; }
+.theme-dark .cm-s-obsidian span.cm-hmd-codeblock.cm-qualifier    { color: #8abf3a !important; }
+
+/* Inline code (single backtick) stays orange */
+.theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-hmd-codeblock) {
+  color: #e0943e !important;
+  background-color: #1e1e1e;
+}
+
+.theme-dark :not(pre) > code {
+  color: #e0943e !important;
+  background-color: #1e1e1e;
+}
+
+/* Strong and emphasis */
+.theme-dark strong,
+.theme-dark .cm-strong {
+  color: #e0943e;
+}
+
+.theme-dark em,
+.theme-dark .cm-em {
+  color: #cc5f8a;
+}
+
+/* Horizontal rule */
+.theme-dark hr {
+  border-color: #3a3a3a;
+}
+
+/* Blockquote left border */
+.theme-dark blockquote {
+  border-left: 3px solid #6b6656;
+}
+
+/* Links */
+.theme-dark a.internal-link {
+  color: #5cb8cc;
+}
+
+.theme-dark a.internal-link:hover {
+  color: #74c8da;
+}
+
+.theme-dark a.external-link {
+  color: #9678d4;
+}
+
+.theme-dark a.external-link:hover {
+  color: #ab8fe0;
+}
+
+/* Tags */
+.theme-dark .tag,
+.theme-dark a.tag {
+  color: #5cb8cc;
+  background-color: rgba(92, 184, 204, 0.12);
+  border: none;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+/* Search highlights */
+.theme-dark .search-result-file-match-highlight {
+  background-color: rgba(224, 148, 62, 0.35);
+}
+
+/* Selection */
+.theme-dark ::selection {
+  background-color: rgba(150, 120, 212, 0.25);
+}
+
+/* Cursor */
+.theme-dark .cm-cursor,
+.theme-dark .cm-s-obsidian .cm-cursor {
+  border-left-color: #f0f0e6;
+}
+
+/* Checkbox styling */
+.theme-dark input[type="checkbox"]:checked {
+  background-color: #9678d4;
+  border-color: #9678d4;
+}
+
+/* Frontmatter / YAML */
+.theme-dark .cm-s-obsidian .cm-hmd-frontmatter {
+  color: #8a8b7e;
+}
+
+/* List markers */
+.theme-dark .list-bullet::after {
+  color: #6b6656;
+}
+
+/* Footnotes */
+.theme-dark .cm-s-obsidian .cm-footref {
+  color: #cc5f8a;
+}
+
+/* Active line highlight */
+.theme-dark .cm-active-line {
+  background-color: rgba(58, 58, 58, 0.3);
+}
+
+/* Matching bracket */
+.theme-dark .cm-s-obsidian .cm-matchingbracket {
+  color: #a0cf55 !important;
+}
+
+/* Scrollbar custom */
+.theme-dark ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(107, 102, 86, 0.3);
+  border-radius: 3px;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(107, 102, 86, 0.5);
+}
