@@ -16,6 +16,7 @@ A matched pair of custom themes for [Ghostty](https://ghostty.org/) and [Obsidia
 
 - `ghostty/monokai-soda-muted` — Ghostty terminal theme
 - `obsidian/theme.css` and `obsidian/manifest.json` — Obsidian theme
+- `screenshots/obsidian-showcase.md`: sample note used for the Obsidian screenshot. It covers inline formatting, a code block, a blockquote and a callout, so you can drop it into a vault to preview the theme or retake the screenshot.
 
 Both share the same underlying palette so your terminal and notes render in matching colors.
 
